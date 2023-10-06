@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+      
+    <div class="game-container">
+        <canvas id="tetris" width="300" height="600"></canvas>
+        <button id="startButton">Start</button>
+
+        <audio id="background-music" loop>
+            <source src="./SnapInsta.io - DansDemand - Need Your Love (128 kbps).mp3" type="audio/mpeg">
+            <!-- Inclua outros formatos de áudio aqui para compatibilidade com navegadores diferentes -->
+          </audio>
+             <!-- Botões de controle -->
+       <!-- Botões de controle de música -->
+
+  <!-- Div de contêiner para os botões -->
+<div class="music-button-container">
+    <button id="play-button" class="music-button">Play</button>
+</div>
+<div class="music-button-container">
+    <button id="pause-button" class="music-button">Pause</button>
+</div>
+<div class="volume-control">
+    <label for="volume">Volume:</label>
+    <input type="range" id="volume" name="volume" min="0" max="1" step="0.1" value="1">
+</div>
+<video id="background-video" autoplay loop muted>
+    <source src="./luffys-resolve-under-the-night-sky.1920x1080.mp4" type="video/mp4">
+   
+</video>
+<button id="restart-button" class="control-button">Reiniciar</button>
+
+
+
+    </div>
+    <script src="tetris.js"></script>
+</body>
+</html>
